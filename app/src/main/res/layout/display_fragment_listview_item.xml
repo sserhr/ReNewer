@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/listview_user_L">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lisview_iv_profile"
+            android:src="@drawable/my_profile"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listview_tv_username"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/lisview_iv_profile"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/mainly_background"
+            android:textColor="@color/white"
+            android:id="@+id/listview_tv_price"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textAllCaps="false"/>
+
+    </RelativeLayout>
+    <!--<TextView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="#F0F0F0"-->
+        <!--android:layout_below="@+id/listview_user_L"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:id="@+id/listview_image_L"
+        android:layout_below="@+id/listview_user_L"
+        >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:id="@+id/listviewe_img_1"
+            >
+        </ImageView>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="3dp"
+            android:id="@+id/listview_img_2"
+            >
+        </ImageView>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="3dp"
+            android:id="@+id/listview_img_3"
+            >
+        </ImageView>
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_below="@+id/listview_image_L"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listview_tv_discription"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/listview_tv_discription"
+        android:background="#F0F0F0"/>
+</RelativeLayout>
